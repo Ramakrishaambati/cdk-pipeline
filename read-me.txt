@@ -1,0 +1,22 @@
+# EC2 based dev/stg/prod servers
+
+This code create an EC2 instances that can be used and a backend server for .NET development.
+
+This code will create:
+* VPC with one private and one public subnet
+* EC2 instance with .NET SDK and Docker installed and configured, placed in a private subnet 
+* EC Instance Connect Endpoint for secure connection to the EC2 instance using SSH
+
+## To Build and Deploy
+
+```bash
+$ dotnet build
+$ cdk bootstrap
+$ cdk deploy
+```
+
+## To Destroy
+
+```bash
+# Destroy all project resources.
+$ cdk destroy
