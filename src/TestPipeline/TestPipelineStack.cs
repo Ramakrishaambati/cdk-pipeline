@@ -13,7 +13,7 @@ namespace TestPipeline
                 PipelineName = "MyPipeline",
                 Synth = new ShellStep("Synth", new ShellStepProps
                 {
-                    Input = CodePipelineSource.GitHub("ramakrishna/cdk-pipeline", "main"),
+                    Input = CodePipelineSource.GitHub("Ramakrishaambati/cdk-pipeline", "main"),
                     Commands = new string[] { "npm install -g aws-cdk", "cdk synth" }
                 })
             });
