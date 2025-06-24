@@ -10,7 +10,7 @@ namespace TestPipeline
             new TestPipelineStack(app, "TestPipelineStack", new StackProps
             {
                 Env = new Amazon.CDK.Environment {
-                Account = "597011385066", Region = "us-east-1" }
+                Account = "597011380000", Region = "us-east-1" }
             });
             app.Synth();
         }
